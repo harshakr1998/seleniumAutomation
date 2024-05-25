@@ -1,0 +1,15 @@
+[
+{
+    "email" : "john.w@mytest.com",
+    "password" : "Password@1",
+    "product" : "ADIDAS ORIGINAL",
+    "country": "India"
+},
+
+{
+    "email" : "john.w@mytest.com",
+    "password" : "Password@1",
+    "product" : "ZARA COAT 3",
+    "country": "India"
+}
+]   
