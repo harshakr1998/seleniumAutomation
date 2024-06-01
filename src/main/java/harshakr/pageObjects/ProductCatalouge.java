@@ -43,7 +43,7 @@ public class ProductCatalouge extends AbstractComponent {
 	
 	public List<WebElement> getProductsList() throws InterruptedException {
 		Thread.sleep(5000);		
-		waitForElementToAppear(productEle);
+//		waitForElementToAppear(productEle);
 		return productsList;
 	}
 	
