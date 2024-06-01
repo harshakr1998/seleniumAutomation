@@ -41,18 +41,19 @@ public class ProductCatalouge extends AbstractComponent {
 	By toastMessage = By.id("toast-container");
 	
 	
-	public List<WebElement> getProductsList() {
+	public List<WebElement> getProductsList() throws InterruptedException {
+		Thread.sleep(5000);		
 		waitForElementToAppear(productEle);
 		return productsList;
 	}
 	
-	public WebElement getProductByName(String productName) {
+	public WebElement getProductByName(String productName) throws InterruptedException {
 		WebElement prod = getProductsList().stream().filter(product->
 		product.findElement(By.cssSelector("b")).getText().equals(productName)).findFirst().orElse(null);
 		return prod;
 	}
 	
-	public void addToCart(String productName){
+	public void addToCart(String productName) throws InterruptedException{
 		WebElement product = getProductByName(productName);
 		product.findElement(addToCart).click();
 		waitForElementToAppear(toastMessage);
