@@ -97,7 +97,8 @@
 				</pluginManagement>
 			</build>
 		</profile>
-
+		
+		
 		<profile>
 			<build>
 				<pluginManagement><!-- lock down plugins versions to avoid using
